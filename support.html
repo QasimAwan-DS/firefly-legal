@@ -143,7 +143,9 @@ Firefly Plus unlocks every activity family — 42 today, across six categories �
 full Puzzles and tracing collections, and
 everything in every weekly theme as it rotates. Monthly and yearly subscriptions
 are available; the app shows the current price and billing period for your App
-Store region before you purchase. Firefly stays
+Store region before you purchase. Apple can show these prices before you allow
+RevenueCat; choosing <strong>Agree &amp; subscribe</strong> saves that permission and begins the
+purchase, which Apple then separately confirms. If a purchase is cancelled or fails, the saved permission can remain. Firefly stays
 ad-free and tracking-free either way — a subscription adds more to play, it never
 removes something we've taken away. Plus doesn't change the daily play time: every
 family gets the same 60-minute default.
@@ -161,7 +163,7 @@ simply a rotating bonus. Tracing and Puzzles are excluded from that rotation.
 
 <h3>I already paid, but Firefly isn't showing Plus. How do I restore it?</h3>
 <p>
-A grown-up first needs to allow subscription checks in the parent area or on the Firefly Plus screen. The disclosure explains the information sent to RevenueCat and that the choice permits future checks. You can keep playing without allowing them, and previously saved Plus access is preserved. Allowing checks does not make a purchase or start a restore. Then tap <strong>"Restore Purchases"</strong>. You'll find it in two places: on the
+Behind the Parent Gate, tap <strong>"Restore Purchases"</strong>. If purchase-data sharing is not yet allowed, the button reads <strong>"Agree &amp; restore purchases"</strong>: choosing it saves your permission for RevenueCat and then begins the restore. Passing the Parent Gate or opening the privacy details does not give permission. The saved permission applies to future connections. You can keep playing without it, and previously saved Plus access is preserved. You'll find the restore button in two places: on the
 subscription screen, and in the parent area under your plan details. It's always
 available, whether or not Firefly currently thinks you're subscribed.
 </p>
@@ -172,13 +174,14 @@ us with a description of the problem. We may ask for the Firefly order number fr
 </p>
 
 <h3>How do I turn subscription checks off?</h3>
-<p>In the parent area, choose <strong>Turn off subscription checks</strong> and confirm.
-Wait for the message that your choice is saved, then fully close Firefly from the app
-switcher and reopen it. Firefly blocks new subscription calls immediately, but
+<p>Go to <strong>Grown-ups → Purchase privacy → Stop sharing purchase data</strong>, then
+choose <strong>Stop sharing and save</strong>.
+Wait for the confirmation that your choice is saved, then fully close Firefly from the app
+switcher and reopen it. New purchase-service calls from the app stop immediately, but
 RevenueCat may finish work already in progress or make its own background or foreground
 requests until that full restart. Returning Home or switching apps is not enough.</p>
 <p>After a successful save and restart, checks stay off until you explicitly allow them
-again in the parent area. If saving fails, use <strong>Retry saving withdrawal</strong>
+again, for example by choosing Agree &amp; subscribe or Agree &amp; restore purchases. If saving fails, use <strong>Retry saving withdrawal</strong>
 before restarting; the app cannot confirm that your choice will persist until it is
 saved. Free play and saved Plus access remain available. A purchase or restore already
 started may finish. Turning checks off does not cancel an Apple subscription or delete
@@ -219,10 +222,14 @@ the current setup does not ask for an age range or learning preferences.
 After a grown-up explicitly allows subscription checks, Firefly uses
 RevenueCat. Whether or not you subscribe, RevenueCat receives an anonymous identifier,
 the device's identifier for vendor (not the advertising identifier), purchase and
-subscription information, the device's tracking-permission status (read automatically,
-never requested), and technical details such as the device model and iOS version.
-RevenueCat's dashboard shows us purchases and subscriptions — never which activities
-your child plays or how. Our full <a href="privacy-policy.html">Privacy Policy</a>
+subscription information, an App Tracking Transparency status value (RevenueCat's
+software can send it without requesting tracking permission, and if Apple's framework
+is unavailable the fallback may not match the real device setting; Firefly never requests
+tracking permission), technical details such as the device model and iOS version, and
+service metadata such as when a record was created and last connected. Firefly does not
+request location permission or use GPS; RevenueCat may derive a country from the IP
+address. RevenueCat's dashboard shows us purchases and subscriptions — never
+child nicknames, activity choices, progress or play duration. Our full <a href="privacy-policy.html">Privacy Policy</a>
 lists exactly what is shared and why.
 </p>
 
